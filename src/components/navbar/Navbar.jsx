@@ -1,19 +1,19 @@
 import "./Navbar.css"
-import {NavLink} from "react-router-dom";
-import {FaUsersGear, FaUsers, FaUserPlus} from "react-icons/fa6";
-import { IoHome } from "react-icons/io5";
+import {NavLink, Outlet} from "react-router-dom";
 
 
 const Navbar = () => {
     return (
-        <nav className="nav">
-            <ul className="ul">
-                <li><NavLink to=""> <IoHome/></NavLink></li>
-                <li><NavLink to="create-user"> <FaUserPlus/></NavLink></li>
-                <li><NavLink to="update-user"> <FaUsersGear/></NavLink></li>
-                <li><NavLink to="users"><FaUsers/></NavLink></li>
-            </ul>
-        </nav>
+        <>
+            <nav className="nav">
+                <ul className="ul">
+                    <li><NavLink to="/create-user">Create user</NavLink></li>
+                    <li><NavLink to="/update-user">Update user</NavLink></li>
+                    <li><NavLink to="/users">Users</NavLink></li>
+                </ul>
+            </nav>
+            <Outlet/>
+        </>
     )
 }
 export default Navbar

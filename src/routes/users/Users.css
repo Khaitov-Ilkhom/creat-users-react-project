@@ -1,0 +1,50 @@
+.user-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+.user-card {
+    width: 100%;
+    background-color: rgba(160, 145, 95, 0.44);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+.user-card:hover {
+    transform: scale(1.05);
+}
+.title {
+    width: 70%;
+}
+.title p {
+    padding: 3px 0 ;
+    font-size: 16px;
+}
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.btns button {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    color: rgb(32, 58, 131);
+    font-size: 22px;
+    transition: 0.3s;
+}
+.edit {
+    background-color: #ffff00;
+}
+.delete {
+    background-color: #ff0033;
+}
+.btns button:active {
+    transform: rotate(4deg) scale(0.7);
+}

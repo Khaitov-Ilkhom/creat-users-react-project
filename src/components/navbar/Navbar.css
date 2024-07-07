@@ -1,34 +1,29 @@
 .nav {
     width: 100%;
-    max-width: 100px;
+    min-height: 80px;
     height: 100%;
-    background: darkgrey;
+    background-color: rgba(217, 216, 216, 0.5);
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(248, 248, 248, 0.35) 0 5px 15px;
+}
+.ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
     gap: 20px;
 }
-.ul li {
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-}
 .ul li a {
-    width: 60px;
-    height: 60px;
-    font-size: 32px;
-    background: #1A1A40;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #09e176;
     color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 550;
 }
-
 .ul li .active {
-    color: #1A1A40;
-    background: white;
+    background-color: #2bf590;
+    color: black;
 }

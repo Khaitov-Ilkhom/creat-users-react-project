@@ -1,0 +1,63 @@
+.users {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(170, 173, 173, 0.19);
+    gap: 20px;
+    padding: 40px 0;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+}
+.form h2 {
+    font-size: 32px;
+    color: white;
+}
+.form input {
+    padding: 10px;
+    width: 70%;
+    background-color: rgba(222, 220, 220, 0.58);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: black;
+}
+input::placeholder {
+    color: black;
+}
+.form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: chocolate;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 14px;
+    transition: 0.3s;
+    color: white;
+}
+.form button:active {
+    transform: rotate(8deg) scale(0.8);
+}
+.password {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.password button {
+    border: none;
+    background: transparent;
+    color: #050505;
+    font-size: 20px;
+}
+.password button:active {
+    color: #2d2dfd;
+}
