@@ -2,7 +2,8 @@ import {saveDataLocalStorage} from "../../helpers/index.js";
 
 const initialState = {
     users: JSON.parse(localStorage.getItem("users")) || [],
-    editUser: null
+    editUser: null,
+    sortStatus: false
 }
 
 const reducer = (state, action) => {
@@ -37,13 +38,25 @@ const reducer = (state, action) => {
                 editUser: null
             }
         }
-        case "Sorted-User": {
+        case "Sort-User": {
+            const sortedUsers = state.users.sort((a, b) => {
+                let nameA = a.username.toUpperCase()
+                let nameB = b.username.toUpperCase()
+                return state.sortStatus ? (nameA < nameB ? -1 : nameA > nameB ? 1 : 0) : (nameA < nameB ? 1 : nameA > nameB ? -1 : 0)
+            })
             return {
                 ...state,
-                users: action.sortedUsers
+                users: sortedUsers
             }
         }
-        default: return state
+        case "Re-Sort-User": {
+            return {
+                ...state,
+                sortStatus: !state.sortStatus
+            }
+        }
+        default:
+            return state
     }
 }
 

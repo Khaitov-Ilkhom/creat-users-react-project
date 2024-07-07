@@ -7,16 +7,9 @@ import UserCards from "../../components/user-cards/UserCards.jsx";
 
 const Users = () => {
     const [state, dispatch] = useContext(AppContext)
-
-
     const sortUsers = () => {
-        const sortedUsers = state.users.sort((a, b) =>{
-            let nameA = a.username.toUpperCase()
-            let nameB = b.username.toUpperCase()
-            return (nameA < nameB) ? -1 : (nameA > nameB) ? 1 : 0
-        })
-        console.log(sortedUsers)
-        dispatch({type: "Sort-User", sortedUsers})
+        dispatch({type: "Sort-User"})
+        dispatch({type: "Re-Sort-User"})
     }
 
     return (
