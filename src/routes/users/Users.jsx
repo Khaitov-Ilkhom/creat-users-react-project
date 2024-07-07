@@ -14,7 +14,7 @@ const Users = () => {
 
     return (
         <Container>
-            <button onClick={sortUsers} type="button">sort users</button>
+            <button className="sort-btn" onClick={sortUsers} type="button">Sort Users</button>
             <div className="user-cards">
                 {
                     state.users.map(user =>

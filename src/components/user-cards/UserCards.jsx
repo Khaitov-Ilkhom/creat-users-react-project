@@ -23,6 +23,9 @@ const UserCards = ({user}) => {
 
     return (
         <div className="user-card">
+            <div className="avatar">
+                <img src={user.image} alt="Avatar"/>
+            </div>
             <div className="title">
                 <h3><b>Username:</b> {user.username}</h3>
                 <p><b>Age:</b> {user.age}</p>

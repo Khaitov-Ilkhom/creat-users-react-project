@@ -2,7 +2,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 30px;
     padding: 30px;
 }
 .user-card {
@@ -11,33 +11,35 @@
     border-radius: 10px;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     backdrop-filter: blur(10px);
     transition: 0.3s;
+    box-shadow: rgba(248, 248, 248, 0.35) 0 5px 15px;
+}
+.avatar img {
+    max-width: 150px;
+    width: 100%;
 }
 .user-card:hover {
-    transform: scale(1.05);
-}
-.title {
-    width: 70%;
+    transform: scale(1.02);
 }
 .title p {
-    padding: 3px 0 ;
+    padding: 4px 0 ;
     font-size: 16px;
 }
-.btns {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+.title p a {
+    color: white;
 }
 .btns button {
-    padding: 6px 8px;
+    padding: 8px 10px;
     border-radius: 5px;
     border: none;
     color: rgb(32, 58, 131);
     font-size: 22px;
     transition: 0.3s;
+    margin: 10px;
 }
 .edit {
     background-color: #ffff00;
@@ -47,4 +49,14 @@
 }
 .btns button:active {
     transform: rotate(4deg) scale(0.7);
+}
+.sort-btn {
+    padding: 10px 25px;
+    background: darkgrey;
+    border: 1px solid whitesmoke;
+    color: indigo;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0;
 }

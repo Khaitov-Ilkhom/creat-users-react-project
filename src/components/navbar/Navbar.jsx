@@ -8,7 +8,6 @@ const Navbar = () => {
             <nav className="nav">
                 <ul className="ul">
                     <li><NavLink to="/create-user">Create user</NavLink></li>
-                    <li><NavLink to="/update-user">Update user</NavLink></li>
                     <li><NavLink to="/users">Users</NavLink></li>
                 </ul>
             </nav>

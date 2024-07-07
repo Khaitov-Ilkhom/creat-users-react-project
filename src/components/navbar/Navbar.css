@@ -17,13 +17,13 @@
 .ul li a {
     padding: 10px 20px;
     border-radius: 10px;
-    background-color: #09e176;
+    background-color: rgba(214, 250, 232, 0.29);
     color: white;
     transition: 0.3s;
     font-size: 16px;
     font-weight: 550;
 }
 .ul li .active {
-    background-color: #2bf590;
+    background-color: rgba(189, 248, 219, 0.62);
     color: black;
 }

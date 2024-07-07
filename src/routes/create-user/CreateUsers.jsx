@@ -5,6 +5,7 @@ import AppContext from "../../contex/store/index.jsx";
 import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {v4 as uuidv4} from 'uuid';
+import avatar from "../../images/avatar.png"
 
 
 const CreateUsers = () => {
@@ -14,6 +15,7 @@ const CreateUsers = () => {
         age: '',
         email: '',
         password: '',
+        image: avatar
     })
 
     const createNewUser = (e) => {
