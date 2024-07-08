@@ -7,7 +7,7 @@ const Navbar = () => {
         <>
             <nav className="nav">
                 <ul className="ul">
-                    <li><NavLink to="/create-user">Create user</NavLink></li>
+                    <li><NavLink to="">Create user</NavLink></li>
                     <li><NavLink to="/users">Users</NavLink></li>
                 </ul>
             </nav>
