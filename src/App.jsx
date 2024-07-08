@@ -12,7 +12,7 @@ function App() {
     <div className="wrapper">
       <Routes>
         <Route element={<Navbar/>}>
-            <Route path="create-user" element={<CreateUsers/>}/>
+            <Route path="/" element={<CreateUsers/>}/>
             <Route path="update-user" element={<UpdatedUsers/>}/>
             <Route path="users" element={<Users/>}/>
         </Route>
